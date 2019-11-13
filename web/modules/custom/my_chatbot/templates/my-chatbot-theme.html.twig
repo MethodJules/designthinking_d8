@@ -1,0 +1,17 @@
+<div id="chatbot">
+    <div id="messages">
+        <div id="nicknames"></div>
+        <div id="lines"></div>
+  </div>
+
+</div>
+
+<script>
+
+function sendMessage() {
+    input = document.getElementById("message").value;
+    lines = document.getElementById("lines");
+    lines.innerHTML += '<p>' + input + '</p>';
+}
+</script>
+

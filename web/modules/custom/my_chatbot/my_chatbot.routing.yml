@@ -1,0 +1,35 @@
+my_chatbot.content:
+  path: 'my_chatbot/content'
+  defaults:
+    _controller: 'Drupal\my_chatbot\Controller\MyChatbotController::content'
+  requirements:
+    _permission: 'access content'
+
+my_chatbot.talktochatbot:
+  path: 'my_chatbot/talktochatbot'
+  defaults:
+    _controller: 'Drupal\my_chatbot\Controller\MyChatbotController::talktochatbot'
+  requirements:
+    _permission: 'access content'
+
+my_chatbot.chat:
+  path: 'my_chatbot/chat'
+  defaults:
+    _controller: 'Drupal\my_chatbot\Controller\MyChatbotController::chat'
+  requirements:
+    _permission: 'access content'
+
+my_chatbot.chat_form:
+  path: 'my_chatbot/chat-form'
+  defaults:
+    _form: 'Drupal\my_chatbot\Form\MyChatbotChatForm'
+  requirements:
+    _permission: 'access content'
+
+my_chatbot.settings:
+  path: '/admin/structure/my_chatbot/settings'
+  defaults:
+    _form: 'Drupal\my_chatbot\Form\MyChatbotSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+

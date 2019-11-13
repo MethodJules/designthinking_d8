@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - design_thinking
+name: Raum
+vid: room
+description: 'Stores the rooms of the DT Process'
+hierarchy: 0
+weight: 0

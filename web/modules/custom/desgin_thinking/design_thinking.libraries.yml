@@ -1,0 +1,9 @@
+designthinking_protocol_overview:
+  version: 1.x
+  js:
+   js/designthinking_protocol_overview.js: {}
+   js/d3.v3.min.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings

@@ -1,0 +1,35 @@
+hello_world.say_hello:
+  path: '/hello-world'
+  defaults:
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::content'
+  requirements:
+    _permission: 'access content'
+
+
+hello_world.tabs.tabs.general_information:
+  path: /hello-world/tabs
+  defaults:
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::generalInformation'
+  requirements:
+    _permission: 'access content'
+
+hello_world.tabs.tabs.first:
+  path: /hello-world/tabs/first
+  defaults:
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::generalInformation'
+  requirements:
+    _permission: 'access content'
+
+hello_world.table:
+  path: '/hello-world/table'
+  defaults:
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::showTasks'
+  requirements:
+    _permission: 'access content'
+
+hello_world.protocol_form:
+  path: '/protocol/form'
+  defaults:
+    _form: 'Drupal\hello_world\Form\HelloWorldForm'
+  requirements:
+    _permission: 'access content'

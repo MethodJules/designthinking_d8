@@ -1,0 +1,48 @@
+design_thinking.show_teammembers:
+  path: '/dt/show_teammembers'
+  defaults:
+    _controller: 'Drupal\design_thinking\Controller\DesignThinkingController::showTeammembers'
+  requirements:
+    _permission: 'access content'
+
+design_thinking.show_protocol:
+  path: '/dt/show_protocol'
+  defaults:
+    _controller: 'Drupal\design_thinking\Controller\DesignThinkingController::showProtocol'
+  requirements:
+    _permission: 'access content'
+
+design_thinking.show_protocol_graphic:
+  path: '/dt/show_protocol/graphic'
+  defaults:
+    _controller: 'Drupal\design_thinking\Controller\DesignThinkingController::showGraphic'
+  requirements:
+    _permission: 'access content'
+
+design_thinking.show_methods:
+  path: '/dt/show_methods'
+  defaults:
+    _controller: 'Drupal\design_thinking\Controller\DesignThinkingController::showMethods'
+  requirements:
+    _permission: 'access content'
+
+design_thinking.show_projects:
+  path: '/dt/show_projects'
+  defaults:
+    _controller: 'Drupal\design_thinking\Controller\DesignThinkingController::showProjects'
+  requirements:
+    _permission: 'access content'
+
+design_thinking.create_protocol:
+  path: '/dt/create_protocol'
+  defaults:
+    _form: 'Drupal\design_thinking\Form\DesignThinkingCreateProtocolForm'
+  requirements:
+    _permission: 'access content'
+
+design_thinking.execute_method:
+  path: '/dt/execute_method'
+  defaults:
+    _form: 'Drupal\design_thinking\Form\DesignThinkingMethodExecutionForm'
+  requirements:
+    _permission: 'access content'

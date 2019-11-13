@@ -1,0 +1,52 @@
+<?php
+
+function design_thinking_install() {
+    $new_term = \Drupal\taxonomy\Entity\Term::create([
+        'vid' => 'room',
+        'name' => 'Vorbereitung',
+    ]);
+
+    $new_term->enforceIsNew();
+    $new_term->save();
+
+    $new_term = \Drupal\taxonomy\Entity\Term::create([
+        'vid' => 'room',
+        'name' => 'Problemraum',
+    ]);
+
+    $new_term->enforceIsNew();
+    $new_term->save();
+
+    $new_term = \Drupal\taxonomy\Entity\Term::create([
+        'vid' => 'room',
+        'name' => 'Lösungsraum',
+    ]);
+
+    $new_term->enforceIsNew();
+    $new_term->save();
+
+    $new_term = \Drupal\taxonomy\Entity\Term::create([
+        'vid' => 'room',
+        'name' => 'Implementierungsraum',
+    ]);
+
+    $new_term->enforceIsNew();
+    $new_term->save();
+
+    $new_term = \Drupal\taxonomy\Entity\Term::create([
+        'vid' => 'phase',
+        'name' => 'divergent',
+    ]);
+
+    $new_term->enforceIsNew();
+    $new_term->save();
+
+    $new_term = \Drupal\taxonomy\Entity\Term::create([
+        'vid' => 'room',
+        'name' => 'konvergent',
+    ]);
+
+    $new_term->enforceIsNew();
+    $new_term->save();
+
+}

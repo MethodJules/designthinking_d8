@@ -1,0 +1,10 @@
+hello_world.tabs.general_information:
+  route_name: hello_world.tabs.tabs.general_information
+  title: General Information
+  base_route: hello_world.tabs.tabs.general_information
+
+hello_world.tabs.tasks:
+  route_name: hello_world.tabs.tabs.tasks
+  title: Tasks
+  base_route: hello_world.tabs.tabs.general_information
+  weight: 2

@@ -1,0 +1,5 @@
+name: Design Thinking
+description: 'Design Thinking Documentation Tool'
+type: module
+core: 8.x
+package: Design Thinking

@@ -1,0 +1,12 @@
+<?php
+ /**
+ * Implements hook_theme().
+ */
+function my_chatbot_theme($existing, $type, $theme, $path) {
+
+    return [
+        'my_chatbot_theme' => [
+            'variables' => ['baseurl' => NULL, 'test_var' => NULL],
+        ]
+    ];
+}

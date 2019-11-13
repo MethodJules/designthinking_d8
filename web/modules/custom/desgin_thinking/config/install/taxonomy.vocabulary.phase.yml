@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - design_thinking
+name: Phase
+vid: phase
+description: 'Stores the phases of the rooms in the DT Process'
+hierarchy: 0
+weight: 0
