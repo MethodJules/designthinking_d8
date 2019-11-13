@@ -1,0 +1,21 @@
+uuid: 4188cd96-80c4-40eb-835a-7d8f6739822e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protokoll_fazit
+    - node.type.protokoll
+  module:
+    - text
+id: node.protokoll.field_protokoll_fazit
+field_name: field_protokoll_fazit
+entity_type: node
+bundle: protokoll
+label: Fazit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

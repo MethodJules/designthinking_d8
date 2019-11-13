@@ -1,0 +1,21 @@
+uuid: 435bedc3-23c2-4db9-9897-4fbce08dda60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protokoll_endzeit
+    - node.type.protokoll
+  module:
+    - datetime
+id: node.protokoll.field_protokoll_endzeit
+field_name: field_protokoll_endzeit
+entity_type: node
+bundle: protokoll
+label: Endzeit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

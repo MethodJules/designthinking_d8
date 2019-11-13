@@ -1,0 +1,19 @@
+uuid: c7f879ed-1d7c-4bd7-ad5f-48904403d907
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zeit
+    - node.type.methode
+id: node.methode.field_zeit
+field_name: field_zeit
+entity_type: node
+bundle: methode
+label: Zeit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

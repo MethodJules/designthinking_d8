@@ -1,0 +1,14 @@
+uuid: 1f82fbed-860f-4bc9-8bba-01b0b3368966
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dt_teilnehmer
+  module:
+    - user
+id: user_add_role_action.dt_teilnehmer
+label: 'Add the DT Teilnehmer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: dt_teilnehmer

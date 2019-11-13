@@ -1,0 +1,21 @@
+uuid: 622fdee1-5956-4671-8744-1cf6e4270222
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bewertungsgrund
+    - node.type.methodendurchfuhrung
+  module:
+    - text
+id: node.methodendurchfuhrung.field_bewertungsgrund
+field_name: field_bewertungsgrund
+entity_type: node
+bundle: methodendurchfuhrung
+label: 'Grund für die Bewertung'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

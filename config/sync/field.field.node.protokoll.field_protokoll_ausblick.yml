@@ -1,0 +1,21 @@
+uuid: fecc0927-ed81-4bfd-8f31-a4d0783a6a3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protokoll_ausblick
+    - node.type.protokoll
+  module:
+    - text
+id: node.protokoll.field_protokoll_ausblick
+field_name: field_protokoll_ausblick
+entity_type: node
+bundle: protokoll
+label: Ausblick
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

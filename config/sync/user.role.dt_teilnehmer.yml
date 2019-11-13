@@ -1,0 +1,17 @@
+uuid: 29a58085-7b6b-4e11-916a-955bfc41d3ea
+langcode: en
+status: true
+dependencies: {  }
+id: dt_teilnehmer
+label: 'DT Teilnehmer'
+weight: 3
+is_admin: null
+permissions:
+  - 'create methode content'
+  - 'create methodendurchfuhrung content'
+  - 'create protokoll content'
+  - 'delete own methode content'
+  - 'delete own methodendurchfuhrung content'
+  - 'delete own protokoll content'
+  - 'edit own methode content'
+  - 'edit own methodendurchfuhrung content'

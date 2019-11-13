@@ -1,0 +1,48 @@
+uuid: 284634d7-5fad-4e82-b7e3-ea9b4dfa7be0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.aufgabe.body
+    - field.field.node.aufgabe.field_aufgabe_deadline
+    - field.field.node.aufgabe.field_aufgabe_verantwortlich
+    - node.type.aufgabe
+  module:
+    - datetime
+    - text
+    - user
+id: node.aufgabe.default
+targetEntityType: node
+bundle: aufgabe
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_aufgabe_deadline:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_aufgabe_verantwortlich:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

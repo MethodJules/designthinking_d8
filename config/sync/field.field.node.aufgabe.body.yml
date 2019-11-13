@@ -1,0 +1,22 @@
+uuid: 06780ada-c661-4d19-87a0-fc13290cccf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.aufgabe
+  module:
+    - text
+id: node.aufgabe.body
+field_name: body
+entity_type: node
+bundle: aufgabe
+label: Aufgabenbeschreibung
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

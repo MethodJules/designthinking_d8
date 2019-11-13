@@ -1,0 +1,20 @@
+uuid: 9c1042a2-3f44-4378-8248-7476f28a0e36
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_aufgabe_deadline
+field_name: field_aufgabe_deadline
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

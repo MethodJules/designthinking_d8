@@ -1,0 +1,28 @@
+uuid: d58eda69-01da-40e5-af03-068c06e79b40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protokoll_teilnehmer
+    - node.type.protokoll
+id: node.protokoll.field_protokoll_teilnehmer
+field_name: field_protokoll_teilnehmer
+entity_type: node
+bundle: protokoll
+label: Teilnehmer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

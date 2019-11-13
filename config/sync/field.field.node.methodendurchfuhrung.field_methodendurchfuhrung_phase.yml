@@ -1,0 +1,29 @@
+uuid: 29d2e384-f72b-4416-af1c-61c25566b0ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_methodendurchfuhrung_phase
+    - node.type.methodendurchfuhrung
+    - taxonomy.vocabulary.phase
+id: node.methodendurchfuhrung.field_methodendurchfuhrung_phase
+field_name: field_methodendurchfuhrung_phase
+entity_type: node
+bundle: methodendurchfuhrung
+label: Phase
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      phase: phase
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

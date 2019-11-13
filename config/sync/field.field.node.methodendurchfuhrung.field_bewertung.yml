@@ -1,0 +1,21 @@
+uuid: 9f2eaff8-3599-4107-849f-a544a7901da1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bewertung
+    - node.type.methodendurchfuhrung
+  module:
+    - options
+id: node.methodendurchfuhrung.field_bewertung
+field_name: field_bewertung
+entity_type: node
+bundle: methodendurchfuhrung
+label: Bewertung
+description: 'Bitte bewerten Sie die Methode.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

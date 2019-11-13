@@ -1,0 +1,20 @@
+uuid: 1cfc8438-4b2b-4f1b-a9c3-f513676f76e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_methodendurchfuhrung_phase
+field_name: field_methodendurchfuhrung_phase
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

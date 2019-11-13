@@ -1,0 +1,21 @@
+uuid: e7dbca7f-e57e-4a75-97e0-7a1804aca8ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protokoll_probleme
+    - node.type.protokoll
+  module:
+    - text
+id: node.protokoll.field_protokoll_probleme
+field_name: field_protokoll_probleme
+entity_type: node
+bundle: protokoll
+label: Probleme
+description: "Probleme, die während des Treffens auftraten.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

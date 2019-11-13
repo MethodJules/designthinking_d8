@@ -1,0 +1,19 @@
+uuid: 6b9344d6-6c87-4ef1-862f-1c669d94a298
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_aufgaben
+field_name: field_aufgaben
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

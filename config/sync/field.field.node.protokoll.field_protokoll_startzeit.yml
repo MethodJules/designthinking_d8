@@ -1,0 +1,21 @@
+uuid: 93b893f4-a06f-45f0-b67a-b31c6ae14522
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protokoll_startzeit
+    - node.type.protokoll
+  module:
+    - datetime
+id: node.protokoll.field_protokoll_startzeit
+field_name: field_protokoll_startzeit
+entity_type: node
+bundle: protokoll
+label: Startzeit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,13 @@
+uuid: f68fe272-92dc-4c54-abc9-1dce973ca877
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - design_thinking
+_core:
+  default_config_hash: HsxPSZXsRXDFAsHTzJvO6woZWfp8iOGuKlSgl51FyJY
+name: Phase
+vid: phase
+description: 'Stores the phases of the rooms in the DT Process'
+weight: 0

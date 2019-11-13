@@ -1,0 +1,21 @@
+uuid: c2a3790e-0a4b-4e47-b932-54569d229dbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protokoll_planung
+    - node.type.protokoll
+  module:
+    - text
+id: node.protokoll.field_protokoll_planung
+field_name: field_protokoll_planung
+entity_type: node
+bundle: protokoll
+label: Planung
+description: "Was ist in diesem Treffen geplant?\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

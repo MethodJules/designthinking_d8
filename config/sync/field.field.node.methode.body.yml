@@ -1,0 +1,22 @@
+uuid: db0dcbf4-b7d3-41e7-8b4a-d46ef1927626
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.methode
+  module:
+    - text
+id: node.methode.body
+field_name: body
+entity_type: node
+bundle: methode
+label: Beschreibung
+description: 'Beschreiben Sie hier wie die Methode durchgeführt wird.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

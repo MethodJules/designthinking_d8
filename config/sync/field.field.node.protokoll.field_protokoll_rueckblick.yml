@@ -1,0 +1,21 @@
+uuid: d8c24a82-f077-4d5a-a2fa-3238add9ac67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protokoll_rueckblick
+    - node.type.protokoll
+  module:
+    - text
+id: node.protokoll.field_protokoll_rueckblick
+field_name: field_protokoll_rueckblick
+entity_type: node
+bundle: protokoll
+label: Rückblick
+description: "Kurzer Rückblick auf das letzte Treffen (Was war das Fazit?)\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

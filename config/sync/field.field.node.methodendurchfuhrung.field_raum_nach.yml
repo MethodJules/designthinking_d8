@@ -1,0 +1,29 @@
+uuid: 7718cc5b-beef-4d33-b3ee-fdca2d3c9f1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_raum_nach
+    - node.type.methodendurchfuhrung
+    - taxonomy.vocabulary.room
+id: node.methodendurchfuhrung.field_raum_nach
+field_name: field_raum_nach
+entity_type: node
+bundle: methodendurchfuhrung
+label: 'Raum nach Durchführung'
+description: "Raum am Ende der Methodendurchführung (In welchem Raum befindet ihr euch nach dem Durchführen der Methode?)\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      room: room
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

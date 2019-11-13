@@ -1,0 +1,13 @@
+uuid: c84003f1-a0fc-4434-8858-d5e25da93578
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - design_thinking
+_core:
+  default_config_hash: VNKRBlnkJtV_c8j0DDyhcxp9tTsEzfFQq7p-6IY1SjE
+name: Raum
+vid: room
+description: 'Stores the rooms of the DT Process'
+weight: 0

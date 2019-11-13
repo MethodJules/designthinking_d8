@@ -1,0 +1,255 @@
+uuid: 49c97b42-d346-4cc4-bbde-492e25def01e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.protokoll.body
+    - field.field.node.protokoll.field_aufgaben
+    - field.field.node.protokoll.field_protokoll_ausblick
+    - field.field.node.protokoll.field_protokoll_endzeit
+    - field.field.node.protokoll.field_protokoll_fazit
+    - field.field.node.protokoll.field_protokoll_methoden
+    - field.field.node.protokoll.field_protokoll_planung
+    - field.field.node.protokoll.field_protokoll_probleme
+    - field.field.node.protokoll.field_protokoll_rueckblick
+    - field.field.node.protokoll.field_protokoll_startzeit
+    - field.field.node.protokoll.field_protokoll_teilnehmer
+    - field.field.node.protokoll.field_protokoll_treffensart
+    - node.type.protokoll
+  module:
+    - datetime
+    - field_group
+    - inline_entity_form
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_allgemeine_information:
+      children:
+        - field_protokoll_startzeit
+        - field_protokoll_teilnehmer
+        - field_protokoll_treffensart
+      parent_name: ''
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: tab-allgemeine-information
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Allgemeine Information'
+    group_vorbereitung:
+      children:
+        - field_protokoll_rueckblick
+        - field_protokoll_planung
+      parent_name: ''
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: tab-vorbereitung
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Vorbereitung
+    group_zusammenfassung:
+      children:
+        - field_protokoll_probleme
+        - field_protokoll_fazit
+        - field_protokoll_ausblick
+        - field_protokoll_endzeit
+      parent_name: ''
+      weight: 11
+      format_type: tab
+      format_settings:
+        id: tab-zusammenfassung
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Zusammenfassung
+    group_aufgaben:
+      children:
+        - field_aufgaben
+      parent_name: ''
+      weight: 10
+      format_type: tab
+      format_settings:
+        id: tab-aufgaben
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Aufgaben
+    group_methodendurchfuehrung:
+      children:
+        - field_protokoll_methoden
+      parent_name: ''
+      weight: 9
+      format_type: tab
+      format_settings:
+        id: tab-methodendurchfuehrung
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Methodendurchführung
+id: node.protokoll.default
+targetEntityType: node
+bundle: protokoll
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_aufgaben:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_protokoll_ausblick:
+    weight: 13
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_protokoll_endzeit:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_protokoll_fazit:
+    weight: 12
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_protokoll_methoden:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_protokoll_planung:
+    weight: 10
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_protokoll_probleme:
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_protokoll_rueckblick:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_protokoll_startzeit:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_protokoll_teilnehmer:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_protokoll_treffensart:
+    weight: 125
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  body: true

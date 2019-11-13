@@ -1,0 +1,18 @@
+uuid: 323f1efb-49c5-492d-bfa5-c9cbdcda7b70
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.methodendurchfuhrung
+id: node.methodendurchfuhrung.title
+field_name: title
+entity_type: node
+bundle: methodendurchfuhrung
+label: Methode
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

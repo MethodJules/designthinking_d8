@@ -1,0 +1,22 @@
+uuid: 8d3d5952-5d18-4863-a39d-65e3afa92681
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.methodendurchfuhrung
+  module:
+    - text
+id: node.methodendurchfuhrung.body
+field_name: body
+entity_type: node
+bundle: methodendurchfuhrung
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

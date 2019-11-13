@@ -1,0 +1,14 @@
+uuid: 15ac70f2-0285-44d2-b311-f4faa15d1591
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dt_teilnehmer
+  module:
+    - user
+id: user_remove_role_action.dt_teilnehmer
+label: 'Remove the DT Teilnehmer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dt_teilnehmer

@@ -1,0 +1,101 @@
+uuid: 11fb3d86-e149-4d19-b50d-15c5a1156b97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.methodendurchfuhrung.body
+    - field.field.node.methodendurchfuhrung.field_bewertung
+    - field.field.node.methodendurchfuhrung.field_bewertungsgrund
+    - field.field.node.methodendurchfuhrung.field_ergebnis
+    - field.field.node.methodendurchfuhrung.field_methoden
+    - field.field.node.methodendurchfuhrung.field_methodendurchfuhrung_phase
+    - field.field.node.methodendurchfuhrung.field_methodendurchfuhrung_raum
+    - field.field.node.methodendurchfuhrung.field_phase_nach
+    - field.field.node.methodendurchfuhrung.field_raum_nach
+    - node.type.methodendurchfuhrung
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.methodendurchfuhrung.default
+targetEntityType: node
+bundle: methodendurchfuhrung
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_bewertung:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_bewertungsgrund:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_ergebnis:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_methoden:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_methodendurchfuhrung_phase:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_methodendurchfuhrung_raum:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_phase_nach:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_raum_nach:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
