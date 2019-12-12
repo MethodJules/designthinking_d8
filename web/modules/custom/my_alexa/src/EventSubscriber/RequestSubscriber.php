@@ -10,8 +10,8 @@ class RequestSubscriber implements EventSubscriberInterface {
      */
     public static function getSubscribedEvents()
     {
-	$message = 'ddhdhdhd';
-	\Drupal::logger('my_alexa')->notice($message);
+	    $message = 'ddhdhdhd';
+	    \Drupal::logger('my_alexa')->notice($message);
         $events['alexaevent.request'][] = ['onRequest', 0];
         return $events;
     }
@@ -30,12 +30,12 @@ class RequestSubscriber implements EventSubscriberInterface {
                 break;
              case 'Methode_abfragen':
                 $response->respond('Die Methode lautet pffff.');
-		\Drupal::logger('my_alexa')->notice('Alexa Aufruf');
-		break;
-             default:
+		        \Drupal::logger('my_alexa')->notice('Alexa Aufruf');
+		        break;
+            default:
                 $response->respond('Hallo Du. Ich kann dir Methoden vorstellen.');
                 \Drupal::logger('my_alexa')->notice('ddddsdssssssssss');
-		break;
-         }
+		        break;
+        }
      }
 }
